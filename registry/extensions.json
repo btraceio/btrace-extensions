@@ -10,10 +10,10 @@
       "maven": {
         "groupId": "io.btrace",
         "artifactId": "btrace-utils",
-        "version": "2.3.0"
+        "version": "3.0.0-RC1"
       },
       "compatibility": {
-        "min_btrace_version": "2.3.0"
+        "min_btrace_version": "3.0.0-RC1"
       },
       "tags": ["utility", "core"]
     },
@@ -26,10 +26,10 @@
       "maven": {
         "groupId": "io.btrace",
         "artifactId": "btrace-metrics",
-        "version": "2.3.0"
+        "version": "3.0.0-RC1"
       },
       "compatibility": {
-        "min_btrace_version": "2.3.0"
+        "min_btrace_version": "3.0.0-RC1"
       },
       "tags": ["metrics", "latency", "histogram"]
     },
@@ -42,12 +42,28 @@
       "maven": {
         "groupId": "io.btrace",
         "artifactId": "btrace-statsd",
-        "version": "2.3.0"
+        "version": "3.0.0-RC1"
       },
       "compatibility": {
-        "min_btrace_version": "2.3.0"
+        "min_btrace_version": "3.0.0-RC1"
       },
       "tags": ["metrics", "statsd", "export"]
+    },
+    {
+      "id": "btrace-otel",
+      "name": "BTrace OpenTelemetry",
+      "description": "Exports completed spans, DELTA counters and gauges from BTrace scripts to an OpenTelemetry collector over OTLP/HTTP JSON.",
+      "owner": "btraceio",
+      "source_repo": "https://github.com/btraceio/btrace",
+      "maven": {
+        "groupId": "io.btrace",
+        "artifactId": "btrace-otel",
+        "version": "3.0.0-RC1"
+      },
+      "compatibility": {
+        "min_btrace_version": "3.0.0-RC1"
+      },
+      "tags": ["tracing", "metrics", "opentelemetry", "otlp", "export"]
     }
   ]
 }
