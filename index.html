@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/242a5caa.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* Modernist — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/37e463cb.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/71ad73b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/411f7133.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/37e463cb.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/71ad73b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/411f7133.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/37e463cb.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/71ad73b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/411f7133.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+:root {
+  --color-bg: #f3f2f2;
+  --color-surface: #eae9e9;
+  --color-text: #201e1d;
+  --color-accent: #ec3013;
+  --color-accent-2: #e15b47;
+  --color-divider: color-mix(in srgb, #201e1d 40%, transparent);
+
+  /* Tonal ramps — generated in OKLCH on one shared lightness scale, so the
+     same step of any role matches the others in visual value. */
+  --color-neutral-100: #f8f4f4;
+  --color-neutral-200: #eae7e7;
+  --color-neutral-300: #d7d3d3;
+  --color-neutral-400: #bab6b6;
+  --color-neutral-500: #9b9797;
+  --color-neutral-600: #7d7979;
+  --color-neutral-700: #605d5d;
+  --color-neutral-800: #444141;
+  --color-neutral-900: #2d2b2b;
+
+  --color-accent-100: #fff2ef;
+  --color-accent-200: #ffe0d9;
+  --color-accent-300: #ffc4b8;
+  --color-accent-400: #ff9783;
+  --color-accent-500: #ff563c;
+  --color-accent-600: #dd2b0f;
+  --color-accent-700: #ae1800;
+  --color-accent-800: #7c1405;
+  --color-accent-900: #4d170e;
+
+  --color-accent-2-100: #fff2ef;
+  --color-accent-2-200: #ffe0da;
+  --color-accent-2-300: #ffc4b9;
+  --color-accent-2-400: #ff9784;
+  --color-accent-2-500: #ef6853;
+  --color-accent-2-600: #c94b39;
+  --color-accent-2-700: #9e3526;
+  --color-accent-2-800: #71261b;
+  --color-accent-2-900: #471d16;
+
+  --font-heading: "Archivo", system-ui, sans-serif;
+  --font-heading-weight: 800;
+  --font-body: "Archivo", system-ui, sans-serif;
+
+  --space-1: 4.0px;
+  --space-2: 8.0px;
+  --space-3: 12.0px;
+  --space-4: 16.0px;
+  --space-6: 24.0px;
+  --space-8: 32.0px;
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+
+  /* Elevation — derived from the ground: soft ink-tinted shadows on a
+     light theme, a hairline edge + ambient darkness on a dark one. */
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2d2b2b 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2d2b2b 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2d2b2b 22%, transparent);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); }
+
+.grayscale{filter:grayscale(1) contrast(1.08)}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Components — built with the tokens above. Plain CSS
+   on plain HTML: no JavaScript, no build step. Each class is documented in
+   readme.md and demonstrated in foundations/ and components/.
+   ══════════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
+}
+h1 { font-size: 42px; }
+h2 { font-size: 32px; }
+h3 { font-size: 25px; }
+h4 { font-size: 20px; }
+h5 { font-size: 16px; }
+h6 { font-size: 13px; }
+h6 { letter-spacing: 0.08em; text-transform: uppercase; }
+p { margin: 0 0 var(--space-3); }
+a { color: var(--color-accent); text-underline-offset: 3px; }
+img { display: block; max-width: 100%; }
+figure { margin: 0; }
+figcaption {
+  font-size: 11px; margin-top: var(--space-1);
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+.text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+
+/* — rules — */
+.hr {
+  height: 2px; border: 0; margin: var(--space-4) 0;
+  background: var(--color-divider);
+}
+
+/* — buttons — */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  cursor: pointer; text-decoration: none;
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 14px; line-height: 1.2; color: var(--color-text); /* matches the .input's 14px —
+     the pair sits side by side in sign-up rows */
+  background: transparent; border: 1px solid transparent;
+  padding: var(--space-2) calc(var(--space-3) * 1.2);
+  border-radius: var(--radius-md);
+}
+.btn svg { display: block; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--color-accent); color: var(--color-bg); }
+.btn-primary:hover { background: var(--color-accent-600); }
+.btn-primary:active { background: var(--color-accent-700); }
+.btn-secondary { border-color: var(--color-divider); }
+.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
+.btn-ghost { color: var(--color-accent); padding-inline: var(--space-1); }
+.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
+.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
+.btn-icon { width: 36px; height: 36px; padding: 0; }
+.btn-block { width: 100%; margin-top: var(--space-2); justify-content: flex-start; text-align: left; }
+
+/* — forms — */
+.field > label {
+  display: block; font-size: 12px; margin-bottom: 5px;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
+}
+.input {
+  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
+  font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
+.input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
+textarea.input { min-height: 90px; resize: vertical; }
+.radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
+.radio input, .seg-opt input {
+  position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
+}
+.radio .dot {
+  width: 16px; height: 16px; flex: none; border-radius: 50%;
+  border: 1.5px solid var(--color-divider);
+}
+.radio:hover .dot { border-color: var(--color-accent); }
+.radio input:checked + .dot {
+  border-color: var(--color-accent); background: var(--color-accent);
+  box-shadow: inset 0 0 0 4px var(--color-bg);
+}
+.radio input:focus-visible + .dot { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+.seg {
+  display: inline-flex; overflow: hidden;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+}
+.seg-opt {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px; font-size: 13px; cursor: pointer;
+}
+.seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
+.seg-opt:has(input:checked) { background: var(--color-accent); color: var(--color-bg); }
+.seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
+.seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+
+/* — cards — */
+.card {
+  display: flex; flex-direction: column; gap: var(--space-2);
+  padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface);
+}
+.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
+.card-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 17px; line-height: 1.2;
+}
+.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
+.card-meta {
+  display: flex; align-items: center; gap: 6px; font-size: 11px;
+  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+}
+.elev-sm { box-shadow: var(--shadow-sm); }
+.elev-md { box-shadow: var(--shadow-md); }
+.elev-lg { box-shadow: var(--shadow-lg); }
+
+/* — tags — */
+.tag {
+  display: inline-flex; align-items: center; font-size: 11px;
+  letter-spacing: 0.02em; padding: 3px 10px;
+  border-radius: calc(var(--radius-md) * 0.75);
+}
+.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
+.tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
+.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
+.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
+
+/* — navigation — */
+.nav {
+  display: flex; align-items: center; gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 2px solid var(--color-divider);
+}
+.nav-brand {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 18px; margin-right: auto;
+}
+.nav a { color: inherit; text-decoration: none; font-size: 14px; }
+.nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
+
+/* — tables — */
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th {
+  text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  padding: var(--space-2); border-bottom: 2px solid var(--color-divider);
+}
+.table td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-divider);
+}
+.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+
+/* — dialog — */
+.dialog-backdrop {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  padding: var(--space-4);
+  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
+}
+.dialog {
+  width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
+  padding: var(--space-4); border-radius: var(--radius-lg);
+  background: var(--color-surface); box-shadow: var(--shadow-lg);
+}
+.dialog-title {
+  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
+  font-size: 20px;
+}
+.dialog-body { font-size: 14px; opacity: 0.85; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
+
+</style>
+<script src="assets/766ebefd.js"></script>
+<link rel="icon" type="image/svg+xml" href="icons/btrace-icon-small.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/btrace-icon-32.png">
+<link rel="apple-touch-icon" href="icons/btrace-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/32bf0d1a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/952ac15f.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/7b6a6381.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/da8036e1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/1cd4e699.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fb405c5f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/32bf0d1a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/952ac15f.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/7b6a6381.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/da8036e1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/1cd4e699.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fb405c5f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/32bf0d1a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/952ac15f.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/7b6a6381.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/da8036e1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/1cd4e699.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fb405c5f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/32bf0d1a.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/952ac15f.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/7b6a6381.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/da8036e1.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/1cd4e699.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fb405c5f.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/bb991d4e.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/3de32048.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/bb991d4e.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3de32048.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/bb991d4e.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/3de32048.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/bb991d4e.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/3de32048.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{margin:0;background:var(--color-text);color:var(--color-bg);text-wrap:pretty}
+a{color:var(--color-accent-400)}
+a:hover{color:var(--color-bg)}
+::selection{background:var(--color-accent);color:var(--color-bg)}
+@keyframes bt-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes bt-blink{50%{opacity:0}}
+@keyframes bt-pulse{50%{opacity:.25}}
+@keyframes bt-ticker{to{transform:translateX(-50%)}}
+@keyframes bt-scan{0%{transform:translateY(-10vh)}100%{transform:translateY(110vh)}}
+@keyframes bt-flicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.4}94%{opacity:1}96%{opacity:.6}97%{opacity:1}}
+@keyframes bt-glitch{0%,86%,100%{clip-path:inset(0 0 100% 0);transform:none}87%{clip-path:inset(12% 0 64% 0);transform:translate(-6px,0)}89%{clip-path:inset(58% 0 18% 0);transform:translate(5px,0)}91%{clip-path:inset(30% 0 46% 0);transform:translate(-3px,0)}93%{clip-path:inset(0 0 100% 0)}}
+</style>
+</helmet>
+
+<div aria-hidden="true" style="position:fixed;inset:0;pointer-events:none;z-index:60;background:repeating-linear-gradient(to bottom,color-mix(in srgb,black 22%,transparent) 0 1px,transparent 1px 3px);opacity:.55"></div>
+<div aria-hidden="true" style="position:fixed;left:0;right:0;top:0;height:14vh;pointer-events:none;z-index:61;background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--color-accent) 6%,transparent),transparent);animation:bt-scan 9s linear infinite"></div>
+
+<div style="background:var(--color-accent);color:var(--color-bg);overflow:hidden;border-bottom:2px solid var(--color-accent-700)">
+  <div style="display:flex;width:max-content;gap:28px;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;animation:bt-ticker 60s linear infinite">
+    <sc-for list="{{ ticker }}" as="tk" hint-placeholder-count="8"><span style="display:flex;align-items:center;gap:28px;white-space:nowrap">{{ tk }}<span style="width:6px;height:6px;background:var(--color-bg)"></span></span></sc-for>
+  </div>
+</div>
+
+<div style="position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--color-text) 88%,transparent);backdrop-filter:blur(8px)">
+  <nav class="nav" style="padding:12px max(clamp(20px,5vw,72px), calc((100% - 1240px) / 2 + clamp(20px,5vw,72px)));gap:24px;border-bottom:2px solid var(--color-neutral-800)">
+    <a href="#top" class="nav-brand" style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.02em;color:var(--color-bg);display:flex;align-items:center;gap:10px;margin-right:0">
+      <img src="icons/btrace-icon-small.svg" alt="" width="28" height="28" style="display:block;outline:1px solid var(--color-neutral-700)">BTRACE<span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--color-accent-400);border:1px solid var(--color-accent);padding:2px 6px">extensions</span>
+    </a>
+    <div style="display:flex;gap:22px;overflow-x:auto;margin-right:auto;scrollbar-width:none;padding:4px 0;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.06em">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5"><a href="{{ n.href }}" aria-current="{{ n.cur }}" style="white-space:nowrap;font-size:12px;color:{{ n.color }}">{{ n.label }}</a></sc-for>
+    </div>
+    <a href="#publish" class="btn btn-primary" style="white-space:nowrap;color:var(--color-bg);font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;box-shadow:0 0 20px color-mix(in srgb,var(--color-accent) 45%,transparent)" style-hover="background:var(--color-accent-500)">List your extension</a>
+  </nav>
+  <div style="height:2px;position:relative;margin-top:-2px"><div ref="{{ progRef }}" style="height:2px;width:0;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></div></div>
+</div>
+
+<main id="top" style="background-image:linear-gradient(color-mix(in srgb,var(--color-bg) 4%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--color-bg) 4%,transparent) 1px,transparent 1px);background-size:64px 64px">
+
+<section data-spy="1" id="find" style="scroll-margin-top:72px">
+  <div style="max-width:1240px;margin:0 auto;padding:88px clamp(20px,5vw,72px) 72px">
+    <div data-hero="0" style="display:flex;flex-wrap:wrap;gap:8px 24px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:28px">
+      <span style="color:var(--color-accent-400)">SYS:// btraceio/btrace-extensions</span><span>registry schema v1</span><span>status: <span style="color:var(--color-accent-400);animation:bt-flicker 3s infinite">{{ entryCountLabel }}</span></span>
+    </div>
+    <h1 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(40px,7.2vw,112px);line-height:.92;letter-spacing:-0.015em;margin:0 0 0 -0.04em">
+      <span data-hero="0" style="display:block;position:relative">Find an extension.<span aria-hidden="true" style="position:absolute;inset:0;color:var(--color-accent);mix-blend-mode:screen;animation:bt-glitch 4.2s steps(1) infinite;pointer-events:none">Find an extension.</span></span>
+      <span data-hero="1" style="display:block"><span style="color:var(--color-accent);text-shadow:0 0 28px color-mix(in srgb,var(--color-accent) 60%,transparent)">Install it</span> in one line.</span>
+    </h1>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px 72px;align-items:start;margin-top:40px">
+      <div>
+        <p data-hero="2" style="font-size:19px;line-height:30px;max-width:56ch;margin:0;color:var(--color-neutral-300)">This registry lists published BTrace extensions. Each entry points to the source repository and one Maven coordinate for the recommended release. The registry is for discovery. It does not host artifacts.</p>
+        <div data-hero="3" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+          <a href="#catalog" class="btn btn-primary" style="min-width:240px;justify-content:space-between;padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--color-bg);box-shadow:0 0 28px color-mix(in srgb,var(--color-accent) 50%,transparent)" style-hover="background:var(--color-accent-500)">Open the catalog <svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a href="#publish" class="btn btn-secondary" style="padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--color-bg);border-color:var(--color-neutral-600)" style-hover="background:color-mix(in srgb,var(--color-bg) 8%,transparent);border-color:var(--color-bg)">&gt;_ Publish an extension</a>
+        </div>
+      </div>
+      <ol data-hero="4" style="list-style:none;margin:0;padding:0;border-top:2px solid var(--color-neutral-800)">
+        <li style="border-bottom:2px solid var(--color-neutral-800)"><a href="#catalog" style="display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;color:var(--color-bg);text-decoration:none" style-hover="color:var(--color-accent-400);background:color-mix(in srgb,var(--color-accent) 8%,transparent)"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400)">[01]</span><span><strong style="display:block;font-size:18px">One reviewed catalog.</strong><span style="font-size:14px;color:var(--color-neutral-400)">Changes come in through pull requests.</span></span><span style="font-family:'JetBrains Mono',monospace">→</span></a></li>
+        <li style="border-bottom:2px solid var(--color-neutral-800)"><a href="#grant" style="display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;color:var(--color-bg);text-decoration:none" style-hover="color:var(--color-accent-400);background:color-mix(in srgb,var(--color-accent) 8%,transparent)"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400)">[02]</span><span><strong style="display:block;font-size:18px">You grant the permissions.</strong><span style="font-size:14px;color:var(--color-neutral-400)">Privileged extensions stay blocked until you allow them.</span></span><span style="font-family:'JetBrains Mono',monospace">→</span></a></li>
+        <li style="border-bottom:2px solid var(--color-neutral-800)"><a href="#publish" style="display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:18px 0;color:var(--color-bg);text-decoration:none" style-hover="color:var(--color-accent-400);background:color-mix(in srgb,var(--color-accent) 8%,transparent)"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400)">[03]</span><span><strong style="display:block;font-size:18px">Hosted on GitHub only.</strong><span style="font-size:14px;color:var(--color-neutral-400)">Pull requests, Actions and Pages. No other service.</span></span><span style="font-family:'JetBrains Mono',monospace">→</span></a></li>
+      </ol>
+    </div>
+
+    <div data-reveal="0" style="position:relative;margin-top:72px;border:2px solid var(--color-neutral-700);background:color-mix(in oklch,var(--color-text),black 45%);box-shadow:0 0 60px color-mix(in srgb,var(--color-accent) 12%,transparent)">
+      <span style="position:absolute;top:-2px;left:-2px;width:18px;height:18px;border-top:2px solid var(--color-accent);border-left:2px solid var(--color-accent)"></span><span style="position:absolute;top:-2px;right:-2px;width:18px;height:18px;border-top:2px solid var(--color-accent);border-right:2px solid var(--color-accent)"></span><span style="position:absolute;bottom:-2px;left:-2px;width:18px;height:18px;border-bottom:2px solid var(--color-accent);border-left:2px solid var(--color-accent)"></span><span style="position:absolute;bottom:-2px;right:-2px;width:18px;height:18px;border-bottom:2px solid var(--color-accent);border-right:2px solid var(--color-accent)"></span>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:10px 16px;border-bottom:2px solid var(--color-neutral-700);font-family:'JetBrains Mono',monospace">
+        <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-300)">[ btracex :: no JVM attached ]</span>
+        <span style="display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-400)"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 8px var(--color-accent);animation:{{ pulseAnim }}"></span>{{ stageLabel }}</span>
+        <button type="button" sc-camel-on-click="{{ replay }}" style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;display:flex;gap:6px;align-items:center;background:transparent;color:var(--color-accent-400);border:1px solid var(--color-accent);padding:5px 10px;cursor:pointer" style-hover="background:var(--color-accent);color:var(--color-bg)"><svg width="13" height="13" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>Replay</button>
+      </div>
+      <div style="padding:24px;min-height:400px;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:23px;overflow-x:auto">
+        <sc-for list="{{ outLines }}" as="l" hint-placeholder-count="0"><div style="white-space:pre;color:{{ l.color }};animation:bt-in .25s ease both">{{ l.text }}</div></sc-for>
+        <span style="display:inline-block;width:9px;height:17px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent);vertical-align:middle;animation:bt-blink 1s steps(1) infinite"></span>
+      </div>
+    </div>
+    <p style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:20px;margin:12px 0 0;color:var(--color-neutral-500)">// Output from <a href="https://github.com/btraceio/btrace/blob/develop/docs/tutorials/04-extensions-and-permissions.md">Tutorial 04: Extensions and Permissions Without Tears</a>. btracex reads manifests directly, so it does not need a running JVM.</p>
+  </div>
+</section>
+
+<section data-spy="1" id="catalog" style="scroll-margin-top:72px;background:color-mix(in srgb,var(--color-text) 60%,black 40%);border-top:2px solid var(--color-neutral-800);border-bottom:2px solid var(--color-neutral-800)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px clamp(20px,5vw,72px)">
+    <div data-reveal="0" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px 72px;align-items:end;margin-bottom:40px"><div><span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:18px"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></span>02 // Catalog</span><h2 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(32px,4.4vw,62px);line-height:.98;letter-spacing:-0.01em;margin:0">Registered extensions.</h2></div><p style="font-size:18px;line-height:28px;margin:0;max-width:52ch;color:var(--color-neutral-300)">This list reads <code style="font-family:'JetBrains Mono',monospace;color:var(--color-accent-400)">registry/extensions.json</code> from GitHub. Copy the install command from an entry.</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:24px">
+      <input class="input" value="{{ query }}" sc-camel-on-change="{{ setQuery }}" placeholder="Search id, name or description" spellcheck="false" style="flex:1 1 280px;max-width:420px;font-family:'JetBrains Mono',monospace;background:var(--color-text);color:var(--color-bg);border-color:var(--color-neutral-700)">
+      <div style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ tagChips }}" as="g" hint-placeholder-count="6"><button type="button" sc-camel-on-click="{{ g.pick }}" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;padding:8px 12px;cursor:pointer;border:1px solid {{ g.border }};background:{{ g.bg }};color:{{ g.fg }}" style-hover="border-color:var(--color-accent)">{{ g.label }}</button></sc-for></div>
+      <span style="margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--color-neutral-500)">{{ sourceLabel }}</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px">
+      <sc-for list="{{ entries }}" as="e" hint-placeholder-count="3">
+        <article style="padding:24px;display:flex;flex-direction:column;gap:12px;border:2px solid var(--color-neutral-800);background:var(--color-text);animation:bt-in .3s ease both" style-hover="border-color:var(--color-accent)">
+          <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline"><code style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;color:var(--color-accent-400)">&gt; {{ e.id }}</code><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--color-neutral-400)">v{{ e.version }}</span></div>
+          <h3 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:22px;line-height:1.05;margin:0">{{ e.name }}</h3>
+          <p style="font-size:15px;line-height:24px;margin:0;color:var(--color-neutral-300)">{{ e.description }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ e.tags }}" as="tg" hint-placeholder-count="2"><span class="tag" style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:3px 8px;border:1px solid var(--color-neutral-700);color:var(--color-neutral-300)">{{ tg }}</span></sc-for></div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:19px;color:var(--color-neutral-400);border-top:1px solid var(--color-neutral-800);padding-top:12px"><span>owner</span><span style="color:var(--color-bg)">{{ e.owner }}</span><span>btrace</span><span style="color:var(--color-bg)">{{ e.minVer }}</span></div>
+          <div style="margin-top:auto;background:color-mix(in oklch,var(--color-text),black 45%);border:1px solid var(--color-neutral-700);border-left:2px solid var(--color-accent);padding:10px 10px 10px 14px;display:flex;gap:10px;align-items:center">
+            <code style="flex:1;min-width:0;font-family:'JetBrains Mono',monospace;font-size:12.5px;overflow-x:auto;white-space:nowrap"><span style="color:var(--color-accent)">$ </span>{{ e.cmd }}</code>
+            <button type="button" sc-camel-on-click="{{ e.copy }}" style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;background:transparent;color:var(--color-bg);border:1px solid var(--color-neutral-600);padding:5px 8px;cursor:pointer" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">{{ e.copyLabel }}</button>
+          </div>
+          <a href="{{ e.source }}" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em">Source →</a>
+        </article>
+      </sc-for>
+    </div>
+    <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}"><p style="font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--color-neutral-400);margin:16px 0 0">// No entry matches. Clear the search or select another tag.</p></sc-if>
+  </div>
+</section>
+
+<section data-spy="1" id="grant" style="scroll-margin-top:72px">
+  <div style="max-width:1240px;margin:0 auto;padding:96px clamp(20px,5vw,72px)">
+    <div data-reveal="0" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px 72px;align-items:end;margin-bottom:56px"><div><span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:18px"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></span>03 // Install and grant</span><h2 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(32px,4.4vw,62px);line-height:.98;letter-spacing:-0.01em;margin:0">You decide what each extension may do.</h2></div><p style="font-size:18px;line-height:28px;margin:0;max-width:52ch;color:var(--color-neutral-300)">Each extension declares the permissions it needs. BTrace blocks a privileged extension until you allow it on the agent side.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px">
+      <sc-for list="{{ grantSteps }}" as="g" hint-placeholder-count="3">
+        <div data-reveal="{{ $index }}" style="padding:28px 24px;display:flex;flex-direction:column;gap:12px;border:2px solid var(--color-neutral-800);background:color-mix(in oklch,var(--color-text),black 45%)">
+          <span style="font-family:'Oxanium',var(--font-heading);font-weight:700;font-size:56px;line-height:1;color:var(--color-accent);text-shadow:0 0 28px color-mix(in srgb,var(--color-accent) 60%,transparent)">{{ g.n }}</span>
+          <h3 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:22px;margin:0">{{ g.title }}</h3>
+          <code style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400);border:1px solid var(--color-neutral-700);padding:8px 10px;overflow-x:auto;white-space:nowrap">{{ g.cmd }}</code>
+          <p style="font-size:15px;line-height:24px;margin:0;color:var(--color-neutral-300)">{{ g.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div data-reveal="1" style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px 72px;align-items:start">
+      <div>
+        <span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:18px"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></span>Bundled with BTrace 3.0</span>
+        <h3 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:30px;line-height:1;margin:0">Eight extensions are already installed.</h3>
+        <p style="font-size:15px;line-height:24px;margin:16px 0 0;color:var(--color-neutral-300)">The distribution includes them under <code style="color:var(--color-accent-400)">$BTRACE_HOME/extensions/</code>. You do not copy anything. Allow the privileged ones with <code style="color:var(--color-accent-400)">allowExtensions=&lt;id&gt;</code> or the policy file.</p>
+      </div>
+      <div style="border-top:2px solid var(--color-neutral-700)">
+        <sc-for list="{{ bundled }}" as="b" hint-placeholder-count="8">
+          <div style="display:grid;grid-template-columns:minmax(0,170px) 1fr auto;gap:16px;padding:12px 0;border-bottom:2px solid var(--color-neutral-800);align-items:baseline">
+            <code style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;color:var(--color-bg)">{{ b.id }}</code>
+            <span style="font-size:15px;line-height:23px;color:var(--color-neutral-300)">{{ b.name }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.04em;color:{{ b.color }}">{{ b.priv }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-spy="1" id="publish" style="scroll-margin-top:72px;background:color-mix(in srgb,var(--color-text) 60%,black 40%);border-top:2px solid var(--color-neutral-800);border-bottom:2px solid var(--color-neutral-800)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px clamp(20px,5vw,72px)">
+    <div data-reveal="0" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px 72px;align-items:end;margin-bottom:48px"><div><span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:18px"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></span>04 // Publish</span><h2 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(32px,4.4vw,62px);line-height:.98;letter-spacing:-0.01em;margin:0">List your extension.</h2></div><p style="font-size:18px;line-height:28px;margin:0;max-width:52ch;color:var(--color-neutral-300)">First publish the artifacts to Maven Central. Then open a pull request that adds one entry. CI validates the entry against the schema.</p></div>
+    <div data-reveal="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:24px 48px;align-items:start">
+      <ol style="list-style:none;margin:0;padding:0;border-top:2px solid var(--color-neutral-700)">
+        <sc-for list="{{ pubSteps }}" as="p" hint-placeholder-count="4">
+          <li style="display:grid;grid-template-columns:52px 1fr;gap:4px 12px;padding:18px 0;border-bottom:2px solid var(--color-neutral-800)">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400);padding-top:3px">[{{ p.n }}]</span>
+            <span style="display:flex;flex-direction:column;gap:6px"><strong style="font-size:18px">{{ p.title }}</strong><span style="font-size:15px;line-height:24px;color:var(--color-neutral-300)">{{ p.desc }}</span><sc-if value="{{ p.cmd }}" hint-placeholder-val="{{ false }}"><code style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--color-accent-400);overflow-x:auto;white-space:nowrap">$ {{ p.cmd }}</code></sc-if></span>
+          </li>
+        </sc-for>
+      </ol>
+      <div style="min-width:0">
+        <div style="display:flex;justify-content:space-between;align-items:center;border:1px solid var(--color-neutral-700);border-bottom:0;padding:8px 12px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-400)">// registry/extensions.json entry</span>
+          <button type="button" sc-camel-on-click="{{ copyEntry }}" style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:transparent;color:var(--color-bg);border:1px solid var(--color-neutral-600);padding:5px 10px;cursor:pointer" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">{{ copyEntryLabel }}</button>
+        </div>
+        <div style="background:var(--color-text);border:1px solid var(--color-neutral-700);border-left:2px solid var(--color-accent);padding:18px 20px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:21px;overflow-x:auto">
+          <sc-for list="{{ entryLines }}" as="el" hint-placeholder-count="18"><div style="white-space:pre;color:{{ el.color }}">{{ el.text }}</div></sc-for>
+        </div>
+        <p style="font-size:14px;line-height:22px;margin:12px 0 0;color:var(--color-neutral-400)">compatibility and tags are optional. The registry keeps one recommended release for each extension.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-spy="1" id="registry" style="scroll-margin-top:72px">
+  <div style="max-width:1240px;margin:0 auto;padding:96px clamp(20px,5vw,72px)">
+    <div data-reveal="0" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:24px 72px;align-items:end;margin-bottom:48px"><div><span style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-400);margin-bottom:18px"><span style="width:8px;height:8px;background:var(--color-accent);box-shadow:0 0 10px var(--color-accent)"></span>05 // Repository</span><h2 style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(32px,4.4vw,62px);line-height:.98;letter-spacing:-0.01em;margin:0">Four files keep it simple.</h2></div><p style="font-size:18px;line-height:28px;margin:0;max-width:52ch;color:var(--color-neutral-300)">Run the same validation on your machine before you open a pull request.</p></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));border-top:2px solid var(--color-neutral-700);border-left:2px solid var(--color-neutral-800)">
+      <sc-for list="{{ repoParts }}" as="r" hint-placeholder-count="4">
+        <div data-reveal="{{ $index }}" style="padding:24px;border-right:2px solid var(--color-neutral-800);border-bottom:2px solid var(--color-neutral-800);display:flex;flex-direction:column;gap:10px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--color-accent-400)">[{{ r.n }}]</span>
+          <code style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:var(--color-bg);word-break:break-all">{{ r.path }}</code>
+          <p style="font-size:15px;line-height:24px;margin:0;color:var(--color-neutral-300)">{{ r.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div data-reveal="1" style="margin-top:24px;background:color-mix(in oklch,var(--color-text),black 45%);border:1px solid var(--color-neutral-700);border-left:2px solid var(--color-accent);padding:16px 20px;font-family:'JetBrains Mono',monospace;font-size:14px;line-height:24px;overflow-x:auto">
+      <div style="white-space:pre"><span style="color:var(--color-accent-400)">$ </span>python3 -m unittest scripts.tests.test_validate_extension_registry</div>
+      <div style="white-space:pre"><span style="color:var(--color-accent-400)">$ </span>python3 scripts/validate_extension_registry.py</div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em">
+      <a href="https://github.com/btraceio/btrace/blob/develop/docs/BTraceExtensionDevelopmentGuide.md">Extension Development Guide →</a>
+      <a href="https://github.com/btraceio/btrace/blob/develop/docs/tutorials/06-write-your-own-extension.md">Write Your Own Extension in 30 Minutes →</a>
+      <a href="https://github.com/btraceio/btrace/blob/develop/docs/PermissionPolicy.md">Permission Policy →</a>
+    </div>
+  </div>
+</section>
+
+<section style="position:relative;overflow:hidden;background:var(--color-accent);color:var(--color-bg)">
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(color-mix(in srgb,var(--color-text) 14%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--color-text) 14%,transparent) 1px,transparent 1px);background-size:64px 64px"></div>
+  <div style="max-width:1240px;margin:0 auto;padding:104px clamp(20px,5vw,72px);position:relative">
+    <img src="icons/btrace-icon.svg" alt="BTrace" width="72" height="72" style="display:block;margin-bottom:28px">
+    <span style="display:block;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:24px">&gt; end of registry_</span>
+    <h2 data-reveal="0" style="font-family:'Oxanium',var(--font-heading);font-weight:700;text-transform:uppercase;font-size:clamp(44px,8vw,128px);line-height:.9;letter-spacing:-0.015em;margin:0 0 0 -0.04em"><span style="display:block">Find. Grant.</span><span style="display:block;color:var(--color-text)">Trace.</span></h2>
+    <div data-reveal="1" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:44px">
+      <a href="#catalog" class="btn" style="background:var(--color-text);color:var(--color-bg);padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em;min-width:240px;justify-content:space-between" style-hover="background:var(--color-neutral-900)">Open the catalog <svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      <a href="https://github.com/btraceio/btrace-extensions/pulls" class="btn" style="color:var(--color-bg);border:2px solid var(--color-bg);padding:12px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.06em" style-hover="background:var(--color-bg);color:var(--color-accent-700)">Open a pull request</a>
+    </div>
+  </div>
+</section>
+
+<footer style="max-width:1240px;margin:0 auto;padding:28px clamp(20px,5vw,72px);display:flex;flex-wrap:wrap;gap:8px 24px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:22px;letter-spacing:.04em;color:var(--color-neutral-400)">
+  <span style="display:flex;align-items:center;gap:8px;color:var(--color-bg);font-weight:600"><img src="icons/btrace-icon-small.svg" alt="" width="18" height="18" style="display:block">BTRACE EXTENSIONS</span>
+  <span>The registry of published BTrace extensions.</span>
+  <a href="https://btraceio.github.io">btraceio</a>
+  <a href="https://github.com/btraceio/btrace-extensions" style="margin-left:auto">github.com/btraceio/btrace-extensions</a>
+</footer>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;liveData&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;animateHero&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;expressive&quot;,&quot;restrained&quot;],&quot;default&quot;:&quot;expressive&quot;,&quot;tsType&quot;:&quot;'expressive'|'restrained'&quot;}}">
+const RAW = 'https://raw.githubusercontent.com/btraceio/btrace-extensions/main/registry/extensions.json';
+const CACHE = 'btx-registry-v1', TTL = 3600e3;
+const SNAPSHOT = [
+  { id: 'btrace-utils', name: 'BTrace Utilities', description: 'Utility services for BTrace scripts, including printer helpers.', owner: 'btraceio', source_repo: 'https://github.com/btraceio/btrace', maven: { groupId: 'io.btrace', artifactId: 'btrace-utils', version: '2.3.0' }, compatibility: { min_btrace_version: '2.3.0' }, tags: ['utility', 'core'] },
+  { id: 'btrace-metrics', name: 'BTrace HDR Histogram', description: 'High-performance metrics using HdrHistogram for accurate percentile tracking.', owner: 'btraceio', source_repo: 'https://github.com/btraceio/btrace', maven: { groupId: 'io.btrace', artifactId: 'btrace-metrics', version: '2.3.0' }, compatibility: { min_btrace_version: '2.3.0' }, tags: ['metrics', 'latency', 'histogram'] },
+  { id: 'btrace-statsd', name: 'BTrace StatsD', description: 'StatsD metrics client for BTrace.', owner: 'btraceio', source_repo: 'https://github.com/btraceio/btrace', maven: { groupId: 'io.btrace', artifactId: 'btrace-statsd', version: '2.3.0' }, compatibility: { min_btrace_version: '2.3.0' }, tags: ['metrics', 'statsd', 'export'] }
+];
+const TICKER = ['One reviewed registry', 'One JSON schema', 'One install command', 'Permissions you grant', 'Eight extensions bundled with BTrace 3.0', 'Publish to Maven Central, list it here', 'CI validates every pull request', 'Hosted on GitHub only'];
+const NAV = [['find', 'Find'], ['catalog', 'Catalog'], ['grant', 'Grant'], ['publish', 'Publish'], ['registry', 'Repository']];
+const TONE = { cmd: 'var(--color-bg)', n: 'var(--color-neutral-300)', dim: 'var(--color-neutral-500)', hl: 'var(--color-accent-400)' };
+const OUT = [
+  { at: 1, k: 'cmd', text: '$ btracex list' },
+  { at: 2, k: 'n', text: 'btrace-metrics [PRIV] - /opt/btrace-3.0.0/extensions/btrace-metrics' },
+  { at: 3, k: 'cmd', text: '$ btracex inspect btrace-metrics' },
+  { at: 4, k: 'n', text: 'Extension: btrace-metrics' },
+  { at: 4, k: 'n', text: 'Version  : 3.0.0' },
+  { at: 4, k: 'hl', text: 'Privileged: true' },
+  { at: 4, k: 'hl', text: 'Required : [CLASSLOADER,REFLECTION,THREADS]' },
+  { at: 4, k: 'n', text: 'Services : io.btrace.metrics.MetricsService' },
+  { at: 6, k: 'cmd', text: '$ btracex policy print' },
+  { at: 7, k: 'n', text: 'Policy: /home/you/.btrace/permissions.properties' },
+  { at: 7, k: 'n', text: '  allowExtensions=' },
+  { at: 7, k: 'hl', text: '  denyExtensions=btrace-metrics' },
+  { at: 7, k: 'n', text: '  allowPrivileged=false' },
+  { at: 9, k: 'cmd', text: '$ btracex policy set --allowExtensions btrace-metrics' },
+  { at: 10, k: 'hl', text: 'Policy saved to /home/you/.btrace/permissions.properties' }
+];
+const END = 11, LOOP = 18;
+const GRANT = [
+  { n: '01', title: 'Install', cmd: 'btracex install <groupId:artifactId:version>', desc: 'Downloads the -extension.zip for the coordinate. You can also give a local zip or a URL. Use --dry-run to see the result first.' },
+  { n: '02', title: 'Inspect', cmd: 'btracex inspect <id>', desc: 'Shows the version, the services and the permissions that the extension requires.' },
+  { n: '03', title: 'Allow', cmd: 'btracex policy set --allowExtensions <id>', desc: 'Writes ~/.btrace/permissions.properties. Your probes read the policy from this file.' }
+];
+const BUNDLED = [
+  ['btrace-metrics', 'BTrace HDR Histogram', 'THREADS'], ['btrace-statsd', 'BTrace StatsD', 'NETWORK'], ['btrace-otel', 'BTrace OpenTelemetry', 'NETWORK, THREADS'], ['btrace-contracts', 'BTrace Contracts', ''],
+  ['btrace-llm-trace', 'BTrace LLM Tracing', ''], ['btrace-rag-quality', 'BTrace RAG Quality', ''], ['btrace-gpu-bridge', 'BTrace GPU Bridge', ''], ['btrace-utils', 'BTrace Utilities', '']
+].map(([id, name, p]) => ({ id, name, priv: p ? 'PRIV ' + p : '—', color: p ? 'var(--color-accent-400)' : 'var(--color-neutral-500)' }));
+const PUB = [
+  { n: '01', title: 'Build with io.btrace.extension', desc: 'The Gradle plugin makes the API jar, the impl jar and the -extension.zip. Give the project the same name as the extension id.' },
+  { n: '02', title: 'Publish to Maven Central', desc: 'Add POM metadata and sign every file. The plugin creates the mavenExtension publication.', cmd: './gradlew publish' },
+  { n: '03', title: 'Add one registry entry', desc: 'Add your entry to registry/extensions.json in a pull request.' },
+  { n: '04', title: 'Pass validation', desc: 'A GitHub Actions workflow checks the entry against the schema. A malformed entry cannot merge.' }
+];
+const ENTRY = '{\n  "id": "my-extension",\n  "name": "My Extension",\n  "description": "What it does",\n  "owner": "example-org",\n  "source_repo": "https://github.com/example-org/my-extension",\n  "maven": {\n    "groupId": "org.example",\n    "artifactId": "my-extension",\n    "version": "1.2.3"\n  },\n  "compatibility": {\n    "min_btrace_version": "3.0.0"\n  },\n  "tags": ["metrics"]\n}';
+const REPO = [
+  { n: '01', path: 'registry/extensions.json', desc: 'The canonical catalog that machines read.' },
+  { n: '02', path: 'registry/extensions.schema.json', desc: 'The schema contract for each entry.' },
+  { n: '03', path: 'site/index.html', desc: 'The static catalog page on GitHub Pages.' },
+  { n: '04', path: 'scripts/validate_extension_registry.py', desc: 'The validation script for local runs and CI.' }
+];
+
+class Component extends DCLogic {
+  state = { t: 0, list: SNAPSHOT, live: false, at: null, q: '', tag: 'all', copied: null, active: 'find' };
+  progRef = React.createRef();
+  componentDidMount() {
+    this.startHero(); this.loadRegistry();
+    this.onScroll = () => { const el = document.scrollingElement || document.documentElement, max = el.scrollHeight - innerHeight; if (this.progRef.current) this.progRef.current.style.width = (max > 0 ? el.scrollTop / max * 100 : 0) + '%'; };
+    addEventListener('scroll', this.onScroll, { passive: true }); this.onScroll();
+    this.spy = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && this.setState({ active: e.target.id })), { rootMargin: '-35% 0px -60% 0px' });
+    document.querySelectorAll('[data-spy]').forEach(s => this.spy.observe(s));
+    this.setupMotion();
+  }
+  componentDidUpdate(prev) { if (prev.animateHero !== this.props.animateHero) this.startHero(); }
+  componentWillUnmount() { clearInterval(this.timer); clearTimeout(this.copyT); removeEventListener('scroll', this.onScroll); this.spy && this.spy.disconnect(); this.io && this.io.disconnect(); }
+  async loadRegistry() {
+    if (this.props.liveData === false) return;
+    try { const c = JSON.parse(localStorage.getItem(CACHE) || 'null'); if (c && Date.now() - c.at < TTL && c.list && c.list.length) { this.setState({ list: c.list, live: true, at: c.at }); return; } } catch (e) {}
+    try {
+      const r = await fetch(RAW, { cache: 'no-store' }); if (!r.ok) throw 0;
+      const j = await r.json(); const list = Array.isArray(j.extensions) ? j.extensions : [];
+      if (!list.length) throw 0;
+      const at = Date.now(); this.setState({ list, live: true, at });
+      try { localStorage.setItem(CACHE, JSON.stringify({ at, list })); } catch (e) {}
+    } catch (e) { this.setState({ live: false }); }
+  }
+  setupMotion() {
+    if ((this.props.motion ?? 'expressive') !== 'expressive' || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const ease = 'cubic-bezier(.2,.7,.2,1)';
+    document.querySelectorAll('[data-hero]').forEach(el => { const d = +el.dataset.hero * 110; el.style.opacity = '0'; el.style.transform = 'translateY(28px)'; el.style.transition = `opacity .9s ${ease} ${d}ms, transform .9s ${ease} ${d}ms`; setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, 30); });
+    const showAll = () => document.querySelectorAll('[data-reveal],[data-hero]').forEach(el => { el.style.opacity = '1'; el.style.transform = 'none'; });
+    addEventListener('beforeprint', showAll);
+    if (document.visibilityState === 'hidden') setTimeout(showAll, 1500);
+    this.io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; e.target.style.opacity = '1'; e.target.style.transform = 'none'; this.io.unobserve(e.target); }), { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => { if (el.getBoundingClientRect().top < innerHeight * 0.92) return; const d = (+el.dataset.reveal || 0) * 100; el.style.opacity = '0'; el.style.transform = 'translateY(48px)'; el.style.transition = `opacity .9s ${ease} ${d}ms, transform .9s ${ease} ${d}ms`; this.io.observe(el); });
+  }
+  startHero() {
+    clearInterval(this.timer);
+    if (this.props.animateHero === false) { this.setState({ t: END }); return; }
+    this.setState({ t: 0 });
+    this.timer = setInterval(() => this.setState(s => ({ t: s.t >= LOOP ? 0 : s.t + 1 })), 850);
+  }
+  copy(key, text) { try { navigator.clipboard && navigator.clipboard.writeText(text); } catch (e) {} clearTimeout(this.copyT); this.setState({ copied: key }); this.copyT = setTimeout(() => this.setState({ copied: null }), 1600); }
+  renderVals() {
+    const s = this.state, t = Math.min(s.t, END), done = t >= END;
+    const tags = ['all'].concat([...new Set(s.list.flatMap(e => e.tags || []))]);
+    const q = s.q.toLowerCase();
+    const filtered = s.list.filter(e => (s.tag === 'all' || (e.tags || []).includes(s.tag)) && (!q || [e.id, e.name, e.description].join(' ').toLowerCase().includes(q)));
+    const d = s.at ? new Date(s.at) : null;
+    return {
+      ticker: TICKER.concat(TICKER),
+      nav: NAV.map(([id, label]) => ({ href: '#' + id, label, cur: s.active === id ? 'page' : undefined, color: s.active === id ? 'var(--color-bg)' : 'var(--color-accent-400)' })),
+      progRef: this.progRef,
+      entryCountLabel: s.list.length + ' entries',
+      outLines: OUT.filter(l => t >= l.at).map(l => ({ text: l.text, color: TONE[l.k] })),
+      stageLabel: done ? 'done // extension allowed' : t < 3 ? 'step 1 // list' : t < 6 ? 'step 2 // inspect' : 'step 3 // set policy',
+      pulseAnim: done ? 'none' : 'bt-pulse 1s steps(1) infinite',
+      replay: () => this.startHero(),
+      query: s.q, setQuery: e => this.setState({ q: e.target.value }),
+      tagChips: tags.map(g => ({ label: g, pick: () => this.setState({ tag: g }), bg: g === s.tag ? 'var(--color-accent)' : 'transparent', fg: g === s.tag ? 'var(--color-bg)' : 'var(--color-neutral-300)', border: g === s.tag ? 'var(--color-accent)' : 'var(--color-neutral-700)' })),
+      sourceLabel: s.live ? '● live' + (d ? ' // ' + d.toISOString().slice(11, 16) + ' UTC' : '') : '○ snapshot // 31 Oct 2026',
+      entries: filtered.map(e => {
+        const m = e.maven || {}, cmd = `btracex install ${m.groupId}:${m.artifactId}:${m.version}`;
+        return { id: e.id, name: e.name, description: e.description, owner: e.owner, version: m.version, tags: e.tags || [], minVer: (e.compatibility && e.compatibility.min_btrace_version) ? e.compatibility.min_btrace_version + '+' : 'any', source: e.source_repo, cmd, copy: () => this.copy(e.id, cmd), copyLabel: s.copied === e.id ? 'Copied' : 'Copy' };
+      }),
+      noResults: !filtered.length,
+      grantSteps: GRANT, bundled: BUNDLED, pubSteps: PUB.map(p => ({ ...p, cmd: p.cmd || false })),
+      entryLines: ENTRY.split('\n').map(text => ({ text, color: /^\s*"[a-z_A-Z]+":/.test(text) ? 'var(--color-bg)' : 'var(--color-neutral-400)' })),
+      copyEntry: () => this.copy('entry', ENTRY), copyEntryLabel: s.copied === 'entry' ? 'Copied' : 'Copy',
+      repoParts: REPO
+    };
+  }
+}
+</script>
+
+
+</body></html>
